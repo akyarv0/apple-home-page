@@ -5,6 +5,9 @@
   font-family: SF UI Display, sans-serif;
 }
 
+
+
+
 .header {
   position: fixed;
   top: 0;
@@ -107,7 +110,7 @@
   color: rgb(255, 255, 255);
   width: 100vw;
   height: 80vh;
-  background-image: url(/iphone-15-pro_overview__f8jz7aagka2q_og.png);
+  background-image: url(/fff.png);
   /* background-color:#000000; */
   background-size: cover;
   margin-top: 20px;
@@ -135,7 +138,7 @@
 }
 .second .text p a:hover {
   text-decoration: underline;
-} 
+}
 
 /* Products */
 
@@ -154,7 +157,6 @@
   height: 20%;
   background-color: rgb(0, 0, 0);
   padding-top: 30px;
- 
 }
 
 .text p a {
@@ -175,6 +177,29 @@
   background-color: white;
   color: #000000;
 }
+
+/* Menu content */
+
+.content {
+  position: relative;
+  display: none;
+  z-index: 10;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 44px;
+
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+}
+
+
 
 /******* Hamburger Menu ********/
 #hamburger-menu {
@@ -225,3 +250,6 @@
 #hamburger-menu.open span:nth-child(3) {
   transform: rotate(-45deg);
 }
+/* body {
+  backdrop-filter: blur(5px) !important;
+} */
