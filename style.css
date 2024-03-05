@@ -110,7 +110,7 @@
   color: rgb(255, 255, 255);
   width: 100vw;
   height: 80vh;
-  background-image: url(/fff.png);
+  background-image: url(./fff.png);
   /* background-color:#000000; */
   background-size: cover;
   margin-top: 20px;
