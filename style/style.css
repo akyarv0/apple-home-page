@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF UI Display, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  background-color: #000000;
+  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.801);
+  letter-spacing: -0.022em;
+  line-height: 12px;
+  font-size: 12px;
+  display: flex;
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.list-group {
+  display: flex;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 33vh;
+}
+
+.list-group a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.795);
+  letter-spacing: 0;
+  line-height: 12px;
+  font-size: 14px;
+}
+
+.list-group a:hover {
+  color: white;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.list-group i:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.MacBookAir {
+  display: flex;
+  background-color: #f5f5f7;
+}
+
+.MacBookAir .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 65vh;
+  background-color: #f5f5f7;
+
+  margin-top: 150px;
+}
+.main .text h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.main .text p {
+  font-size: 28px;
+}
+.main .text p a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.main .text p span {
+  font-size: 20px;
+  color: #0a58ca;
+}
+.main .text p a:hover {
+  text-decoration: underline;
+}
+.Iphone15Pro .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 80vh;
+  background-image: url(/img/iphone-15-pro_overview__f8jz7aagka2q_og.png);
+  /* background-color:#000000; */
+  background-size: cover;
+  margin-top: 20px;
+}
+.visionPro .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  background-color: #fafafa;
+  background-image: url(/img/Apple_Vision_Pro_Review-.png);
+  padding-top: 250px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.second .text p span {
+  font-size: 20px;
+  color: #0a58ca;
+}
+.second .text p a:hover {
+  text-decoration: underline;
+} 
+
+/* Products */
+
+.second {
+  display: flex;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  height: 20%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 30px;
+  margin-right: 10px;
+}
+
+.text p a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.text p span {
+  padding-left: 7px;
+}
+
+.text img {
+  width: 100%;
+  height: 80%;
+}
+
+.second .white {
+  background-color: white;
+  color: #000000;
+}
+
+/******* Hamburger Menu ********/
+#hamburger-menu {
+  width: 18px;
+  height: 15px;
+
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-menu span {
+  position: absolute;
+  left: 0;
+
+  height: 2px;
+  width: 100%;
+
+  opacity: 1;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+
+  pointer-events: none;
+
+  transform: rotate(0deg);
+  transition: 0.2s ease;
+}
+
+#hamburger-menu span:nth-child(1) {
+  top: 9px;
+}
+
+#hamburger-menu span:nth-child(2),
+#hamburger-menu span:nth-child(3) {
+  top: 40%;
+}
+
+#hamburger-menu.open span:nth-child(1) {
+  top: 40%;
+  width: 0%;
+  left: 40%;
+}
+
+#hamburger-menu.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
